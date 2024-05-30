@@ -1,3 +1,4 @@
+import { MetaFunction } from "@remix-run/node";
 import {
   Links,
   Meta,
@@ -5,6 +6,13 @@ import {
   Scripts,
   ScrollRestoration,
 } from "@remix-run/react";
+
+export const meta: MetaFunction = () => {
+  return [
+    { title: "Gual Casas" },
+    { name: "description", content: "Fullstack developer at your service." },
+  ];
+};
 
 export default function App() {
   return (
